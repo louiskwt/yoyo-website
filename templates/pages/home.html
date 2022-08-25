@@ -3,5 +3,34 @@
 {% block subtitle %} 主頁 {% endblock %}
 
 {% block content %}
-<h1>Hello! This's Yoyo's website</h1>
+			<!-- Banner -->
+				<section id="banner">
+
+					<!--
+						".inner" is set up as an inline-block so it automatically expands
+						in both directions to fit whatever's inside it. This means it won't
+						automatically wrap lines, so be sure to use line breaks where
+						appropriate (<br />).
+					-->
+					<div class="inner">
+
+						<header>
+							<h2>Yoyo 教室</h2>
+						</header>
+						<p>我係 <strong>Yoyo</strong></p>
+                        <br />
+						<br />
+						<p></p>港大5**名師</p>
+						<footer>
+							<ul class="buttons stacked">
+								<li><a href="#main" class="button fit scrolly">報名試堂</a></li>
+							</ul>
+							<ul class="buttons stacked">
+								<li><a href="#main" class="button fit scrolly">課程資訊</a></li>
+							</ul>
+						</footer>
+
+					</div>
+
+				</section>
 {% endblock %}
