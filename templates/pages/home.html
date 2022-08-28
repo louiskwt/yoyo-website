@@ -1,6 +1,8 @@
 {% extends "base.html" %}
+{% load markdown_extras %}
 
 {% block subtitle %} 主頁 {% endblock %}
+
 
 {% block content %}
 			<!-- Banner -->
@@ -16,9 +18,7 @@
 						<header>
 							<h2>Yoyo 教室</h2>
 						</header>
-						<p>我係 <strong>Yoyo</strong></p>
-                        <br />
-						<p>港大5**名師</p>
+						{{ hero | markdown | safe }}
 						<footer>
 							<ul class="buttons stacked">
 								<li><a href="https://wa.me/85297706309?text=我要試堂" class="button fit scrolly">報名試堂</a></li>
