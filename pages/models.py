@@ -1,3 +1,4 @@
+from turtle import title
 from django.db import models
 
 # Create your models here.
@@ -8,3 +9,10 @@ class HomePage(models.Model):
 
     def __str__(self) -> str:
         return self.section_name
+
+class CourseInfo(models.Model):
+    title = models.CharField(max_length=100)
+    info = models.TextField()
+
+    def __str__(self):
+        return self.title
