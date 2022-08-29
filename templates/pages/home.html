@@ -24,7 +24,7 @@
 								<li><a href="{{ link }}" class="button fit scrolly">報名試堂</a></li>
 							</ul>
 							<ul class="buttons stacked">
-								<li><a href="#main" class="button fit scrolly">課程資訊</a></li>
+								<li><a href="#courseInfo" class="button fit scrolly">課程資訊</a></li>
 							</ul>
 						</footer>
 					</div>
@@ -35,7 +35,7 @@
 					<div class="row">
 						<!-- Course Info (minimum 3) -->
 						{% for item in courseInfoList %}
-							<div class="col-4 col-12-narrower">
+							<div class="col-4 col-12-narrower" id="courseInfo">
 								<section>
 									<span class="icon solid featured fa-check"></span>
 									<header>
