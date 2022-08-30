@@ -49,9 +49,9 @@
       <footer id="footer">
         <h2>歡迎聯絡查詢</h2>
         <ul class="icons">
-          <li><a href="" class="icon brands circle fa-whatsapp"><span class="label">WhatsApp</span></a></li>
-          <li><a href="" class="icon brands circle fa-instagram"><span class="label">Instagram</span></a></li>
-
+          {% for item in contactList %}
+            <li><a href="{{ item.link }}" target="_blank" class="icon brands circle {{item.iconClass}}"><span class="label">{{ item.method }}</span></a></li>
+          {% endfor %}
         </ul>
         <ul class="copyright">
           <li>&copy; Yoyo</li>
