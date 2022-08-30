@@ -1,3 +1,4 @@
+from pyexpat import model
 from django.db import models
 
 # Create your models here.
@@ -15,3 +16,11 @@ class CourseInfo(models.Model):
 
     def __str__(self):
         return self.title
+
+class Contact(models.Model):
+    method = models.CharField(max_length=100)
+    link = models.CharField(max_length=512)
+    iconClass = models.CharField(max_length=300)
+
+    def __str__(self):
+        return self.method
