@@ -1,4 +1,3 @@
-from pyexpat import model
 from django.db import models
 
 # Create your models here.
@@ -8,7 +7,7 @@ class HomePage(models.Model):
     text_content = models.TextField()
 
     def __str__(self) -> str:
-        return self.section_name
+        return self.section_namex
 
 class CourseInfo(models.Model):
     title = models.CharField(max_length=100)
