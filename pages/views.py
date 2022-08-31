@@ -11,7 +11,6 @@ def homePageView(request):
 
     contactList = Contact.objects.all()
 
-    print(heroContent)
     context = {
         'hero': heroContent[0],
         'link': heroLink[0],
