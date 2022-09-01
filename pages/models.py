@@ -7,7 +7,7 @@ class HomePage(models.Model):
     text_content = models.TextField()
 
     def __str__(self) -> str:
-        return self.section_namex
+        return self.section_name
 
 class CourseInfo(models.Model):
     title = models.CharField(max_length=100)
