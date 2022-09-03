@@ -18,7 +18,7 @@ DB_URL = os.getenv("DB_URL")
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["yoyo-website-production.up.railway.app", "chowyoyohku.com", "127.0.0.1"]
 
