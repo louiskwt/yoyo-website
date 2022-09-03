@@ -1,11 +1,11 @@
 from django.shortcuts import render
 from .models import Contact, HomePage, CourseInfo
-from django.http import Http404
+
 
 # Create your views here.
 def homePageView(request):
     try: 
-        heroContent = HomePage.objects.filter(section_name="heros").values_list('text_content', flat=True)
+        heroContent = HomePage.objects.filter(section_name="hero").values_list('text_content', flat=True)
 
         heroLink = HomePage.objects.filter(section_name="hero").values_list('links', flat=True)
 
@@ -19,8 +19,6 @@ def homePageView(request):
         'contactList': contactList
         }
     except:
-        raise Http404
+        return render(request, 'pages/404.html', status=404)
     else:
         return render(request, 'pages/home.html', context)
-
-    

@@ -19,6 +19,7 @@ from django.urls import path, include
 from .sitemaps import StaticViewSitemap
 
 
+
 sitemaps = {
     'static': StaticViewSitemap,
 }
