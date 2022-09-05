@@ -72,7 +72,7 @@ TEMPLATES = [
 WSGI_APPLICATION = "yoyopage.wsgi.application"
 
 
-CSRF_TRUSTED_ORIGINS = ["yoyo-website-production.up.railway.app", "chowyoyohku.com", "https://chowyoyohku.com"]
+CSRF_TRUSTED_ORIGINS = ["https://chowyoyohku.com"]
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
